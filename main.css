@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+.navbar-brand{
+    font-family:  'Brush Script MT', cursive;
+    font-size: 50px;
+}
+.navbar-brand span:hover{
+    color: blueviolet;
+}
+.navbar-nav li a{
+    font-family: 'Brush Script MT', cursive;
+    color: lightpink;
+    margin: 20px;
+}
+.navbar-nav li a:hover{
+    color: palevioletred;
+    font-size: 30px;
+}
+.navbar{
+    box-shadow: 1px 1px 5px grey;
+    background-color:white;
+}
+#home{
+    padding-top: 150px;
+
+}
+.names{
+    padding-top: 160px;
+}
+.social-media li{
+    list-style: none;
+    margin: 20%;
+    margin-left: 50%;
+
+}
+.social-media span:hover{
+    color: darkslateblue;
+}
+.social-media span{
+    font-size: 36px;
+    color: palevioletred;
+}
+#image{
+    background-repeat: no-repeat;
+}
+#About{
+    padding-top: 80px;
+}
+.title h1{
+    font-family:  'Brush Script MT', cursive;
+    text-align: center;
+}
+.title h4{
+    letter-spacing: 3px;
+    font-family:  'Brush Script MT', cursive;
+    text-transform: capitalize;
+}
+.head h1{
+    color: blue;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 3px 3px 2px grey;
+}
+.progress-bar{
+    background-color: palevioletred;
+    border-radius: 5px;
+}
+.skills{
+    padding: 50px;
+}
+.sk{
+    padding: 60px;
+    box-shadow: 5px 5px 5px  grey;
+}
+.sk h1{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Brush Script MT', cursive;
+    text-shadow: 2px 2px 2px  grey;
+    color: blue;
+}
+.form-group{
+    text-align: center;
+    padding: 20px;
+}
+.contact{
+    box-shadow: 5px 5px 5px grey;
+    background-color:lightgrey;
+    margin: 65px;
+    padding: 20px;
+}
+.form-control:focus{
+    color: palevioletred;
+    background-color: white;
+    border-color: pink;
+    box-shadow: 2px 2px 2px grey;
+}
+.social{
+    background-color: lightgrey;
+    text-align: center;
+    color: darkslateblue;
+    margin: 65px;
+    box-shadow: 5px 5px 2px grey;
+}
+.social span{
+    padding: 20px;
+    font-size: 30px;
+}
+.copyright{
+    padding: 10px;
+}

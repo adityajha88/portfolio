@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link href="main.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <script>
+      function Validate()
+      {
+       var IsValid = true;
+      document.getElementById("NameERR").innerText = "";
+      document.getElementById("SubjectERR").innerText = "";
+      document.getElementById("EmailERR").innerText = "";
+
+// Check for a name
+    if (document.getElementById("Name").value == "") 
+    {
+       document.getElementById("name").innerText = "Missing name";
+        IsValid = false;
+    }
+// Check for an subject
+     if (document.getElementById("msg").value == "")
+      {
+      document.getElementById("msg").innerText = "Missing message";
+       IsValid = false;
+    }
+
+	// Check for a valid email address
+     	var ValidEmail = false;
+	   for (i=0; i<document.getElementById("Email").value.length; i++)
+	       {
+		        if (document.getElementById("Email").value.charAt(i) == "@") 
+		           {
+		        	ValidEmail = true;
+		         	break;
+		       }
+	       }
+	         if (ValidEmail == false) 
+	      {
+	      	document.getElementById("email").innerText = "Incorrect email format";
+		      IsValid = false;
+        }
+        	return IsValid;
+    }
+    </script>
+</head>
+<body id="myPage">
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#myPage"><span style="color: palevioletred;">Adi.</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span style="color: palevioletred;">Adi.</span></h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home">Home.</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#About">About me.</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link active" href="#skills">Skills.</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#contact">Contact.</a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--Page description-->
+      <section id="home">
+        <div class="container-fluid ">
+            <div class="row">
+              <div class="social-media col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <li><span class="bi-facebook"></span></li>
+                <li><span class="bi-instagram"></span></li>
+                <li><span class="bi-twitter"></span></li>
+            </div>
+
+            <div class="names col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <h3>Hii!</h3>
+              <h1>I am <span style="color: palevioletred;">Aditya Jha</span></h1>
+              <h4>A front-end Developer...</h4>
+              <button class="btn btn-success">
+                  Hire me!
+              </button>              
+            </div>
+            <div class="image col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <img src="boy1.jpg"/>
+            </div>                
+        </div>
+      </section>
+      <!--About me-->
+      <section id="About">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="title col-xs-4 col-sm-4 col-md-4 col-lg-4">              
+              <h1>ab<span style="color: palevioletred;">out. Me</span></h1>
+            </div>
+            <div class="title col-xs-4 col-sm-4 col-md-4 col-lg-6">
+              <h4>Aditya jha</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--skills-->
+      <div class="container-fluid" id="skills">
+        <div class="skills col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="sk col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div>
+              <h1>Web development</h1>
+            </div>
+            <div>
+              <h3>HTML</h3>
+            </div> 
+            <div class="progress">
+              <div class="progress-bar" style="width: 95%;"></div>
+            </div>
+            <div>
+              <h3>CSS</h3>
+            </div> 
+            <div class="progress">
+              <div class="progress-bar" style="width: 98%;"></div>
+            </div>
+            <div>
+              <h3>JAVASCRIPT</h3>
+            </div> 
+            <div class="progress">
+              <div class="progress-bar" style="width: 90%;"></div>
+            </div>
+            <div>
+              <h3>JQuery</h3>
+            </div> 
+            <div class="progress">
+              <div class="progress-bar" style="width: 88%;"></div>
+            </div>
+            <div>
+              <h3>Bootstrap</h3>
+            </div> 
+            <div class="progress">
+              <div class="progress-bar" style="width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--contact-->
+      <div class="container-fluid  col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="contact" id="contact" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="row mx-auto">
+            <div class="title col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <h1>con<span style="color: palevioletred;">tact</span></h1>
+            </div>
+            <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <form method="POST" action="" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 mx-auto">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" name="name" id="name" placeholder="Enter your name" class="form-control"/>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="Enter your email" class="form-control"/>
+                </div>
+                <div class="form-group">
+                  <label for="msg">Message:</label>
+                  <textarea type="text" id="msg" class="form-control"></textarea>
+                </div>
+                <button class="btn btn-dark" type="submit">submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Footer-->
+      <footer>
+        <div class="container-fluid  col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="social">
+             <div class="foot-span">
+              <span class="bi-facebook" 
+              data-bs-toggle="tooltip" title="facebook" data-bs-placement='bottom'></span>
+              <span class="bi-twitter"
+              data-bs-toggle="tooltip" title="twitter" data-bs-placement="bottom"></span>
+              <span class="bi-instagram"
+              data-bs-toggle="tooltip" title="instagram" data-bs-placement="bottom"></span>
+             </div>
+             <div class="copyright">
+               <h5>2021 @ copyright reserved</h5>
+             </div>
+           </div>           
+        </div>
+      </footer>
